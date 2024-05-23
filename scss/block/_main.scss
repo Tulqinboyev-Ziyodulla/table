@@ -1,0 +1,42 @@
+.main {
+
+
+    .table {
+        margin-top: 30px;
+        &__content {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: cursive;
+            th,td {
+                border-bottom: 1px solid grey; 
+                padding: 10px;
+            }
+            th {
+                background-color: #36304A;
+                text-align: left;
+                color: #fff;
+            }
+            tr {
+                &:nth-child(even) {
+                    background-color: #f1f1f1;
+                }
+                &:hover {
+                    color: #009878;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:800px) {
+    .table {
+        &__wrapper {
+            overflow: auto;
+        }
+        &__content {
+            width: 800px;
+        }
+    }
+}
